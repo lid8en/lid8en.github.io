@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="St. Svithun Skole" content="with=device-width, initial-scale=1.0">
+    <title>St. Svithun Skole</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav> 
+        <a href="index.html"><img src="images/Screenshot_2022-11-10_114942-removebg-preview-removebg-preview.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">Forside</a></li>
+                <li><a href="">Om Skolen</a></li>
+                <li><a href="">Kontakt oss</a></li>
+                <li><a href="">Skolens ledelse</a></li>
+                <li><a href="">Skolens stab</a></li>
+                <li><a href="">Skolens lærere</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Ungdomsskole i Stavanger</h1>
+    <p>Vi hos St. Svithun Skole sørger for at elevene våre får den beste skolegangen de kan.
+    </p>
+    <a href="" class="hero-btn">Besøk oss for å vite mer</a>
+</div>    
+
+</section>
+
+<!-------- Om Skolen ------->
+
+<section class="about">
+    <h1>Om St. Svithun Skole</h1>
+    <p>St. Svithun Skole ble etablert i 1918/19 som Den kommunale Middelskole. Vi er en mot-skole og vi sørger for at alle våre elever får tre bra skoleår.</p>
+</section>
+
+
+
+<!--------Skolens Ledelse-------->
+
+<section class="ledelse">
+    <h1>Skolens Ledelse</h1>
+
+    <div class="row">
+        <div class="ledelse-2">
+            <h3>Vibeke Vikse</h3>
+            <img src="images/vibeke rektor.jpg">
+            <p>Rektor<br>
+                Tlf:51913540<br>
+                Email:vibeke.vikse@stavanger.kommune.no (Kontaktskjema)</p> 
+        </div>
+        <div class="ledelse-2">
+            <h3>Ole Kristian Lie</h3>
+            <img src="images/ole kristian.jpg">
+            <p>Avdelingsleder<br>
+                Tlf:51913540<br>
+                Email:ole.kristian.lie@stavanger.kommune.no (Kontaktskjema)</p> 
+        </div>
+        <div class="ledelse-2">
+            <h3>Bent Inge Ask</h3>
+            <img src="images/bent inge.jpg">
+            <p>Avdelingsleder<br>
+                Tlf:51913540<br>
+                Email:bent.inge.ask@stavanger.kommune.no (Kontaktskjema)</p> 
+        </div>
+    </div>
+
+
+    
+    
+</section>
+
+
+
+
+<!-------- Javascript for Toggle Menu ------->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+    
+
+</script>
+
+</body>    
+</html>
